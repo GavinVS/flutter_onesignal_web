@@ -1,0 +1,27 @@
+name: onesignal_web
+description: A new flutter plugin project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  plugin:
+    implements: onesignal_flutter
+    platforms:
+      web:
+        pluginClass: OnesignalWeb
+        fileName: onesignal_web.dart
